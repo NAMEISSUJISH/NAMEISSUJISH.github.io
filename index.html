@@ -6,145 +6,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* ===== GLOBAL ===== */
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #222;
-      margin: 40px;
-      line-height: 1.6;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #1f2937;
     }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 5px;
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
     }
+
+    /* ===== PROFILE HEADER ===== */
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .header .tagline {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    /* ===== SECTION CARDS ===== */
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    }
+
+    /* ===== HEADINGS ===== */
     h2 {
-      color: #333;
-      margin-top: 40px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 6px;
+      font-size: 26px;
+      margin-bottom: 18px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
     }
+
     p {
       font-size: 16px;
-      max-width: 900px;
+      line-height: 1.8;
     }
+
     ul {
-      max-width: 900px;
+      padding-left: 20px;
     }
+
     li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      line-height: 1.6;
     }
+
+    /* ===== HIGHLIGHT BOX ===== */
+    .highlight {
+      background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+      border-left: 6px solid #667eea;
+      padding: 16px 18px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    /* ===== SKILLS GRID ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .skill-box b {
+      color: #4f46e5;
+    }
+
+    /* ===== LINKS ===== */
     a {
-      color: #0b5ed7;
+      color: #4f46e5;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 500;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .tagline {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 25px;
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+      opacity: 0.9;
     }
-    .highlight {
-      background: #eef2ff;
-      padding: 12px 16px;
-      border-left: 4px solid #0b5ed7;
-      max-width: 900px;
-      margin-top: 20px;
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<h1>Sujish Kumar Indrajith</h1>
-<div class="tagline">
-  Data Analyst | Business Analyst | Analytics & GenAI-Enabled Roles
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="profile.jpg" alt="Sujish Kumar Indrajith">
+    <h1>Sujish Kumar Indrajith</h1>
+    <div class="tagline">
+      Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow
+    </div>
+  </div>
+
+  <!-- OBJECTIVE -->
+  <div class="card">
+    <h2>Career Objective</h2>
+    <p>
+      Analytics-focused graduate student seeking opportunities in
+      <b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b>,
+      where I can apply data analysis, statistical modeling, and visualization
+      to deliver <b>clear insights and measurable business impact</b>.
+    </p>
+    <p>
+      I am passionate about transforming complex data into actionable decisions
+      while growing expertise in <b>ServiceNow platforms</b> and
+      <b>Generative AI–enabled analytics</b>.
+    </p>
+
+    <div class="highlight">
+      🌱 Currently learning <b>ServiceNow (ITSM & workflows)</b> and
+      <b>Generative AI</b> for AI-powered analytics and intelligent automation.
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="card">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>
+        <b>Graduate Analyst Intern — ISRO</b><br>
+        Performed geospatial and time-series analysis on atmospheric datasets to
+        support rocket launch readiness and mission-critical decisions.
+      </li>
+      <li>
+        <b>Junior Technical Consultant — Encora (DHL)</b><br>
+        Analyzed, cleaned, and validated enterprise datasets to support reliable
+        data integration and analytics workflows.
+      </li>
+      <li>
+        <b>Student Office Intern — Michigan SBDC</b><br>
+        Managed Salesforce CRM data and supported data-driven reporting for
+        small business consulting programs.
+      </li>
+    </ul>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="card">
+    <h2>Key Analytics Projects</h2>
+    <ul>
+      <li>
+        <b>Hospital Operational Efficiency & Quality Analysis</b><br>
+        Applied EDA, feature engineering, and predictive modeling to identify
+        operational bottlenecks in healthcare workflows.
+      </li>
+      <li>
+        <b>Geospatial Weather Analytics for Launch Readiness</b><br>
+        Analyzed spatial and temporal weather data to assess launch-window suitability.
+      </li>
+      <li>
+        <b>U.S. Presidential Election Data Analysis</b><br>
+        Used R and tidyverse to analyze voting patterns and visualize trends.
+      </li>
+      <li>
+        <b>AI-Powered Document Intelligence & Chatbot</b><br>
+        Built an NLP-based system to extract insights from unstructured documents.
+      </li>
+    </ul>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><b>Analytics:</b><br>EDA, Data Cleaning, Feature Engineering</div>
+      <div class="skill-box"><b>ML & Stats:</b><br>Regression, Classification, Hypothesis Testing</div>
+      <div class="skill-box"><b>Languages:</b><br>Python, R, SQL</div>
+      <div class="skill-box"><b>Visualization:</b><br>Tableau, Power BI, ggplot2, Matplotlib</div>
+      <div class="skill-box"><b>Platforms:</b><br>ServiceNow (Learning), Salesforce</div>
+      <div class="skill-box"><b>Tools:</b><br>GitHub, Jupyter, VS Code</div>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>🎓 MS in Applied Computer Science — GPA: 3.75/4.0</li>
+      <li>🛰️ Selected as Graduate Analyst Intern at ISRO</li>
+      <li>📊 Analytics experience across healthcare, government, and business domains</li>
+      <li>🤖 Actively building expertise in ServiceNow and Generative AI</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      📧 <b>Email:</b> sujishofficial@gmail.com<br>
+      🔗 <b>LinkedIn:</b>
+      <a href="https://www.linkedin.com/in/sujish-kumar-indrajith-9a9737238" target="_blank">
+        linkedin.com/in/sujish-kumar-indrajith
+      </a><br>
+      📁 <b>GitHub:</b>
+      <a href="https://github.com/NAMEISSUJISH" target="_blank">
+        github.com/NAMEISSUJISH
+      </a>
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2026 • Built with passion for data & analytics
+  </div>
+
 </div>
-
-<p>
-I am an analytics-focused professional and graduate student in <b>Applied Computer Science</b>
-with strong hands-on experience in <b>data analysis, statistical modeling, and visualization</b>.
-I specialize in transforming complex datasets into <b>clear, actionable business insights</b>
-that support decision-making.
-</p>
-
-<p>
-My experience spans <b>healthcare analytics, geospatial data analysis, CRM/business analytics,
-consulting, and research</b>. I am comfortable working with real-world data, collaborating
-with cross-functional teams, and communicating insights to both technical and non-technical stakeholders.
-</p>
-
-<div class="highlight">
-  🌱 Currently expanding my skills in <b>ServiceNow</b> and <b>Generative AI</b>, focusing on
-  AI-enabled analytics, workflow automation, and intelligent decision-support systems.
-</div>
-
-<h2>Core Skills</h2>
-<ul>
-  <li><b>Data Analysis:</b> Exploratory Data Analysis (EDA), Data Cleaning, Feature Engineering</li>
-  <li><b>Statistics & Machine Learning:</b> Regression, Classification, Hypothesis Testing, Time-Series Analysis</li>
-  <li><b>Programming & Querying:</b> Python, R, SQL</li>
-  <li><b>Visualization & Reporting:</b> ggplot2, Matplotlib, Tableau, Power BI</li>
-  <li><b>Enterprise & Tools:</b> GitHub, Jupyter Notebook, VS Code, Salesforce, ServiceNow (Learning)</li>
-</ul>
-
-<h2>Featured Projects</h2>
-<ul>
-  <li>
-    <b>Hospital Operational Efficiency & Quality of Service Analysis</b><br>
-    Analyzed patient wait times and service efficiency using Python,
-    applied EDA and predictive modeling to identify operational bottlenecks.
-  </li>
-  <li>
-    <b>Geospatial Weather Analytics for Launch Readiness (ISRO)</b><br>
-    Performed spatial and time-series analysis on atmospheric datasets
-    to support mission-critical launch decisions.
-  </li>
-  <li>
-    <b>U.S. Presidential Election Data Analysis (1976–2020)</b><br>
-    Used R and tidyverse to analyze voting trends and visualize party-level patterns over time.
-  </li>
-  <li>
-    <b>Business Intelligence Dashboard</b><br>
-    Designed analytical dashboards using Tableau / Power BI
-    to present KPIs and business insights.
-  </li>
-</ul>
-
-<h2>Experience Snapshot</h2>
-<ul>
-  <li>
-    <b>Graduate Analyst Intern</b> — Indian Space Research Organisation (ISRO)
-  </li>
-  <li>
-    <b>Junior Technical Consultant</b> — Encora Inc (Client: DHL)
-  </li>
-  <li>
-    <b>Student Office Intern</b> — Michigan Small Business Development Center (SBDC)
-  </li>
-</ul>
-
-<h2>Career Interests</h2>
-<p>
-I am actively seeking opportunities in <b>Data Analyst, Business Analyst, Product Analyst,
-Analytics</b>, and <b>GenAI- or ServiceNow-enabled roles</b>, where I can apply analytics
-to drive measurable business and operational impact.
-</p>
-
-<h2>Contact</h2>
-<p>
-📧 <b>Email:</b> sujishofficial@gmail.com<br>
-🔗 <b>LinkedIn:</b>
-<a href="https://www.linkedin.com/in/sujish-kumar-indrajith-9a9737238" target="_blank">
-linkedin.com/in/sujish-kumar-indrajith
-</a><br>
-📁 <b>GitHub:</b>
-<a href="https://github.com/NAMEISSUJISH" target="_blank">
-github.com/NAMEISSUJISH
-</a>
-</p>
 
 </body>
 </html>
