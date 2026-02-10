@@ -4,287 +4,84 @@
 <meta charset="UTF-8">
 <title>Sujish Kumar Indrajith | Analytics Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
-:root{
-  --primary:#1e40af;
-  --secondary:#6366f1;
-  --accent:#0ea5e9;
-  --text:#0f172a;
-  --muted:#475569;
-  --bg:#f8fafc;
-}
-
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:"Inter","Segoe UI",Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-
-/* HERO VIDEO */
-.hero-video{
-  position:relative;
-  height:100vh;
-  overflow:hidden;
-}
-.hero-video video{
-  position:absolute;
-  top:50%;
-  left:50%;
-  min-width:100%;
-  min-height:100%;
-  transform:translate(-50%,-50%);
-  filter:brightness(0.45) blur(2px);
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:white;
-}
-.hero-content img{
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  border:6px solid white;
-  margin-bottom:22px;
-}
-.hero-content h1{
-  font-size:48px;
-  margin-bottom:10px;
-}
-.hero-content p{
-  font-size:18px;
-  opacity:0.95;
-}
-
-/* CONTAINER */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:80px 20px;
-}
-
-/* SECTION */
-section{
-  margin-bottom:80px;
-}
-section h2{
-  font-size:30px;
-  margin-bottom:22px;
-  color:var(--primary);
-  position:relative;
-}
-section h2::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-8px;
-  width:80px;
-  height:4px;
-  background:linear-gradient(90deg,var(--secondary),var(--accent));
-  border-radius:3px;
-}
-
-/* CARD */
-.card{
-  background:white;
-  border-radius:20px;
-  padding:36px;
-  box-shadow:0 20px 45px rgba(15,23,42,0.08);
-}
-
-/* TEXT */
-ul{padding-left:22px}
-li{margin-bottom:10px}
-p{font-size:16px}
-
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:50px 20px;
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .hero-content h1{font-size:34px}
-}
+body{margin:0;font-family:Inter,Segoe UI,Arial;background:#f8fafc;color:#0f172a;line-height:1.8}
+.container{max-width:1100px;margin:auto;padding:60px 20px}
+.header{text-align:center;margin-bottom:60px}
+.header img{width:180px;height:180px;border-radius:50%;border:6px solid #1e40af}
+h1{font-size:44px;color:#1e40af;margin-bottom:6px}
+.tagline{color:#475569;font-size:18px}
+.card{background:white;border-radius:18px;padding:36px;margin-bottom:40px;
+box-shadow:0 20px 45px rgba(15,23,42,.08)}
+h2{color:#1e3a8a;border-left:6px solid #3b82f6;padding-left:14px}
+.footer{text-align:center;color:#475569;margin-top:40px}
 </style>
 </head>
-
 <body>
-
-<!-- HERO -->
-<div class="hero-video">
-  <video autoplay muted loop playsinline>
-    <source src="bg.mp4" type="video/mp4">
-  </video>
-
-  <div class="hero-content">
-    <img src="profile.jpg" alt="Sujish Kumar Indrajith">
-    <h1>Sujish Kumar Indrajith</h1>
-    <p>Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow</p>
-  </div>
-</div>
-
 <div class="container">
 
-<!-- OBJECTIVE -->
-<section>
+<div class="header">
+<img src="profile.jpg">
+<h1>Sujish Kumar Indrajith</h1>
+<div class="tagline">Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow</div>
+</div>
+
+<div class="card">
 <h2>Career Objective</h2>
-<div class="card">
 <p>
-Analytics-focused professional and graduate student in <b>Applied Computer Science</b> with strong hands-on
-experience in <b>data analysis, machine learning, statistics, and visualization</b>.
-I specialize in transforming complex datasets into <b>clear, actionable insights</b>
-that support business, operational, and strategic decision-making.
-</p>
-<p>
-Currently expanding expertise in <b>ServiceNow</b> and <b>Generative AI</b>, focusing on
-AI-enabled analytics, workflow automation, and intelligent decision-support systems.
-Actively seeking opportunities in <b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b>.
+Analytics-focused professional and graduate student in Applied Computer Science with hands-on experience
+in data analysis, statistical modeling, and visualization. Seeking Data Analyst, Business Analyst,
+and Analytics roles to transform complex data into actionable insights.
 </p>
 </div>
-</section>
 
-<!-- EDUCATION -->
-<section>
+<div class="card">
 <h2>Education</h2>
-<div class="card">
 <ul>
-<li><b>Master of Science – Applied Computer Science</b><br>
-Grand Valley State University, Grand Rapids, MI<br>
-GPA: 3.75 / 4.0 | May 2026</li>
-
-<li><b>Bachelor of Engineering – Electronics & Computer Science</b><br>
-Anna University, Chennai, India<br>
-GPA: 3.45 / 4.0 | May 2023</li>
+<li><b>MS – Applied Computer Science</b>, GVSU (GPA 3.75/4.0, May 2026)</li>
+<li><b>BE – Electronics & Computer Science</b>, Anna University (GPA 3.45/4.0, May 2023)</li>
 </ul>
-<p><b>Relevant Coursework:</b> Data Mining, Machine Learning, Data Engineering, Information Visualization,
-Probability & Statistics, Linear Algebra, Python Programming, R Programming,
-System Analysis & Design, Applied Statistics, Business Intelligence</p>
 </div>
-</section>
 
-<!-- SKILLS -->
-<section>
+<div class="card">
 <h2>Skills</h2>
-<div class="card">
 <ul>
-<li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML</li>
-<li><b>AI & Data Analytics:</b> Exploratory Data Analysis (EDA), Data Cleaning & Preprocessing,
-Regression & Classification Models</li>
-<li><b>Insight Analysis:</b> Document Understanding, Insight Extraction, Data Summarization</li>
-<li><b>Visualization:</b> Tableau, Power BI, ggplot2, Matplotlib, Analytical Reporting</li>
-<li><b>Tools & Platforms:</b> Jupyter Notebook, GitHub, Visual Studio Code, Unity, Salesforce</li>
-<li><b>Professional Skills:</b> Teamwork, Problem-Solving, Collaboration, Customer-Focused Thinking</li>
+<li>Python, R, SQL, JavaScript, C, HTML</li>
+<li>EDA, Data Cleaning, Regression, Classification</li>
+<li>Tableau, Power BI, ggplot2, Matplotlib</li>
+<li>GitHub, Jupyter, VS Code, Salesforce, Unity</li>
 </ul>
 </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section>
-<h2>Professional Experience</h2>
 <div class="card">
+<h2>Experience</h2>
 <ul>
-<li><b>STING Member – AR/VR Developer (GVSU)</b> | Sep 2025 – Present<br>
-Developed immersive AR/VR crime scene simulations using Unity.
-Designed optimized 3D environments with Blender and analyzed user interaction data
-to improve virtual learning outcomes.</li>
-
-<li><b>Student Office Intern – Michigan SBDC</b> | Apr 2025 – Aug 2025<br>
-Managed Salesforce CRM data for 40+ small business clients per month.
-Supported data organization, reporting readiness, webinars, and client communications.</li>
-
-<li><b>Junior Technical Consultant – Encora Inc (DHL)</b> | Jan 2024 – Jul 2024<br>
-Analyzed, validated, and transformed enterprise datasets.
-Supported ITX & WTX integration workflows and data quality troubleshooting.</li>
-
-<li><b>Graduate Analyst Intern – Indian Space Research Organisation (ISRO)</b> | Oct 2024 – Dec 2024<br>
-Conducted geospatial and time-series analysis on atmospheric datasets
-to evaluate launch-window readiness and environmental risks.</li>
+<li><b>ISRO – Graduate Analyst Intern:</b> Geospatial & time-series analysis for launch readiness.</li>
+<li><b>Encora (DHL):</b> Enterprise data validation and integration.</li>
+<li><b>Michigan SBDC:</b> Salesforce CRM operations & reporting.</li>
 </ul>
 </div>
-</section>
 
-<!-- PROJECTS -->
-<section>
-<h2>Academic & Analytics Projects</h2>
 <div class="card">
+<h2>Projects</h2>
 <ul>
-<li><b>Hospital Operational Efficiency & Quality of Service Analysis</b><br>
-Evaluated patient wait times and service efficiency using EDA.
-Applied regression and classification models to identify operational bottlenecks.</li>
-
-<li><b>Build Fellowship – Healthcare Insights Project</b><br>
-Analyzed public healthcare datasets using Excel and predictive modeling
-to uncover population-level health trends.</li>
-
-<li><b>U.S. Presidential Election Data Analysis (1976–2020)</b><br>
-Performed statistical analysis using R and tidyverse.
-Built ggplot2 visualizations to compare voting trends across states and parties.</li>
-
-<li><b>AI-Powered Document Intelligence & Chatbot</b><br>
-Designed NLP-based document analysis system.
-Built a chatbot interface for intelligent document querying and insight extraction.</li>
+<li><b>Hospital Operations Analytics:</b> Regression & classification on patient flow data.</li>
+<li><b>US Election Analysis:</b> R-based statistical analysis (1976–2020).</li>
+<li><b>AI Document Intelligence:</b> NLP-based chatbot & insight extraction.</li>
 </ul>
 </div>
-</section>
 
-<!-- ACHIEVEMENTS -->
-<section>
-<h2>Achievements & Leadership</h2>
 <div class="card">
+<h2>Leadership & Achievements</h2>
 <ul>
-<li>Mental Health Ambassador – Grand Valley State University</li>
-<li>Board of Directors Member – Indian Students Association (ISA), GVSU</li>
-<li>Selected for prestigious Indian Space Research Organisation (ISRO)</li>
+<li>Mental Health Ambassador – GVSU</li>
+<li>ISA Board of Directors</li>
+<li>ISRO Selection</li>
 <li>Red Cross Volunteer</li>
-<li>Worked with TCS & Barclays on CSR operations and certification initiatives</li>
 </ul>
 </div>
-</section>
 
-<!-- CERTIFICATIONS -->
-<section>
-<h2>Certifications & Learning</h2>
-<div class="card">
-<ul>
-<li>Master Diploma in Computer Applications</li>
-<li>Salesforce Administrator – Beginner (30-Day Learning Plan)</li>
-<li>Microsoft Azure Fundamentals (AZ-900 – In Progress)</li>
-</ul>
-</div>
-</section>
-
-<!-- LANGUAGES -->
-<section>
-<h2>Languages</h2>
-<div class="card">
-<ul>
-<li>English</li>
-<li>Tamil</li>
-<li>Telugu</li>
-<li>Hindi</li>
-</ul>
-</div>
-</section>
-
-<div class="footer">
-© 2026 • Sujish Kumar Indrajith | Data & Analytics Portfolio
-</div>
-
+<div class="footer">© 2026 • Sujish Kumar Indrajith</div>
 </div>
 </body>
 </html>
