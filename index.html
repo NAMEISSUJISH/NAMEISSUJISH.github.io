@@ -6,125 +6,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== GLOBAL ===== */
-body {
-  margin: 0;
-  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #1f2937;
+body{
+  margin:0;
+  font-family:"Poppins","Segoe UI",Arial,sans-serif;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:#1f2937;
 }
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 50px 20px;
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:50px 20px;
 }
-
-/* ===== HEADER ===== */
-.header {
-  text-align: center;
-  color: white;
-  margin-bottom: 50px;
+.header{
+  text-align:center;
+  color:white;
+  margin-bottom:50px;
 }
-
-.header img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 5px solid white;
-  object-fit: cover;
-  margin-bottom: 18px;
-  background: white;
+.header img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:6px solid white;
+  object-fit:cover;
+  margin-bottom:20px;
 }
-
-.header h1 {
-  font-size: 42px;
-  margin-bottom: 8px;
+.header h1{
+  font-size:44px;
+  margin-bottom:6px;
 }
-
-.header .tagline {
-  font-size: 18px;
-  opacity: 0.95;
+.header .tagline{
+  font-size:18px;
+  opacity:0.95;
 }
-
-/* ===== CARD SECTIONS ===== */
-.card {
-  background: white;
-  border-radius: 18px;
-  padding: 35px;
-  margin-bottom: 40px;
-  box-shadow: 0 25px 55px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+.card{
+  background:white;
+  border-radius:20px;
+  padding:40px;
+  margin-bottom:40px;
+  box-shadow:0 30px 60px rgba(0,0,0,0.18);
 }
-
-.card:hover {
-  transform: translateY(-6px);
+h2{
+  font-size:28px;
+  margin-bottom:20px;
+  background:linear-gradient(90deg,#667eea,#764ba2);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
-
-/* ===== HEADINGS ===== */
-h2 {
-  font-size: 26px;
-  margin-bottom: 18px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
+p{
+  font-size:16px;
+  line-height:1.85;
 }
-
-/* ===== TEXT ===== */
-p {
-  font-size: 16px;
-  line-height: 1.8;
+ul{
+  padding-left:22px;
 }
-
-ul {
-  padding-left: 20px;
+li{
+  margin-bottom:12px;
 }
-
-li {
-  margin-bottom: 10px;
+.highlight{
+  background:linear-gradient(135deg,#eef2ff,#f5f3ff);
+  border-left:6px solid #667eea;
+  padding:18px;
+  border-radius:14px;
+  margin-top:20px;
 }
-
-/* ===== HIGHLIGHT BOX ===== */
-.highlight {
-  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
-  border-left: 6px solid #667eea;
-  padding: 16px;
-  border-radius: 12px;
-  margin-top: 20px;
+.footer{
+  text-align:center;
+  color:white;
+  font-size:14px;
+  margin-top:20px;
+  opacity:0.9;
 }
-
-/* ===== LINKS ===== */
-a {
-  color: #4f46e5;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  text-align: center;
-  color: white;
-  opacity: 0.9;
-  margin-top: 30px;
-  font-size: 14px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-  .header h1 {
-    font-size: 32px;
-  }
+@media(max-width:600px){
+  .header h1{font-size:32px;}
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <!-- HEADER -->
@@ -138,108 +96,147 @@ a:hover {
 
 <!-- OBJECTIVE -->
 <div class="card">
-  <h2>Career Objective</h2>
-  <p>
-    Analytics-focused professional and graduate student in <b>Applied Computer Science</b>
-    seeking opportunities in <b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b>.
-    I specialize in transforming complex datasets into
-    <b>clear, actionable insights</b> that support business and operational decision-making.
-  </p>
-  <div class="highlight">
-    🌱 Currently expanding my expertise in <b>ServiceNow</b> and <b>Generative AI</b>,
-    focusing on AI-enabled analytics, workflow automation, and intelligent decision-support systems.
-  </div>
+<h2>Career Objective</h2>
+<p>
+Analytics-focused professional and graduate student in <b>Applied Computer Science</b> with hands-on experience in
+<b>data analysis, statistical modeling, and visualization</b>. Seeking opportunities in
+<b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b> where I can transform
+complex datasets into <b>clear, actionable insights</b> that drive business and operational decisions.
+</p>
+<div class="highlight">
+🌱 Currently expanding expertise in <b>ServiceNow</b> and <b>Generative AI</b>, focusing on
+AI-enabled analytics, workflow automation, and intelligent decision-support systems.
+</div>
 </div>
 
 <!-- EDUCATION -->
 <div class="card">
-  <h2>Education</h2>
-  <ul>
-    <li><b>MS – Applied Computer Science</b>, Grand Valley State University, USA<br>
-        GPA: 3.75 / 4.0 | May 2026</li>
-    <li><b>BE – Electronics & Computer Science</b>, Anna University, India<br>
-        GPA: 3.45 / 4.0 | May 2023</li>
-  </ul>
-  <p>
-    <b>Relevant Coursework:</b> Data Mining, Machine Learning, Data Engineering,
-    Information Visualization, Probability & Statistics, Linear Algebra,
-    Python, R, Applied Statistics, Business Intelligence
-  </p>
+<h2>Education</h2>
+<ul>
+<li><b>Master of Science – Applied Computer Science</b><br>
+Grand Valley State University, Grand Rapids, MI<br>
+GPA: 3.75 / 4.0 | May 2026</li>
+
+<li><b>Bachelor of Engineering – Electronics & Computer Science</b><br>
+Anna University, Chennai, India<br>
+GPA: 3.45 / 4.0 | May 2023</li>
+</ul>
+<p><b>Relevant Coursework:</b> Data Mining, Machine Learning, Data Engineering, Information Visualization,
+Probability & Statistics, Linear Algebra, Python Programming, R Programming,
+System Analysis & Design, Applied Statistics, Business Intelligence</p>
 </div>
 
 <!-- SKILLS -->
 <div class="card">
-  <h2>Skills</h2>
-  <ul>
-    <li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML</li>
-    <li><b>AI & Data Analytics:</b> EDA, Data Cleaning, Regression, Classification</li>
-    <li><b>Insight Analysis:</b> Document Understanding, Insight Extraction</li>
-    <li><b>Visualization:</b> Tableau, Power BI, ggplot2, Matplotlib</li>
-    <li><b>Tools:</b> Jupyter Notebook, GitHub, VS Code, Salesforce, Unity</li>
-  </ul>
+<h2>Skills</h2>
+<ul>
+<li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML</li>
+<li><b>AI & Data Analytics:</b> Exploratory Data Analysis (EDA), Data Cleaning & Preprocessing,
+Regression & Classification Models</li>
+<li><b>Insight Analysis:</b> Document Understanding, Insight Extraction, Data Summarization</li>
+<li><b>Visualization:</b> ggplot2, Matplotlib, Tableau, Power BI, Analytical Reporting</li>
+<li><b>Tools & Platforms:</b> Jupyter Notebook, GitHub, Visual Studio Code, Unity, Salesforce</li>
+<li><b>Professional Skills:</b> Teamwork, Problem-Solving, Collaboration, Customer-Focused Thinking</li>
+</ul>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="card">
-  <h2>Professional Experience</h2>
-  <ul>
-    <li><b>STING Member – AR/VR Developer (GVSU)</b><br>
-        Developed immersive Unity-based forensic simulations and analyzed user interaction data.</li>
-    <li><b>Student Office Intern – Michigan SBDC</b><br>
-        Managed Salesforce CRM data for 40+ small business clients.</li>
-    <li><b>Junior Technical Consultant – Encora (DHL)</b><br>
-        Performed data cleaning, validation, and integration support.</li>
-    <li><b>Graduate Analyst Intern – ISRO</b><br>
-        Conducted geospatial and time-series analysis for launch readiness.</li>
-  </ul>
+<h2>Professional Experience</h2>
+<ul>
+<li><b>STING Member – AR/VR Developer (GVSU)</b> | Sep 2025 – Present<br>
+• Developed immersive AR/VR crime scene simulations using Unity for forensic education.<br>
+• Designed and optimized 3D environments using Blender for performance and spatial accuracy.<br>
+• Implemented interactive logic and workflows using JetBrains tools.<br>
+• Analyzed user interaction and system performance data to improve learning outcomes.
+</li>
+
+<li><b>Student Office Intern – Michigan SBDC</b> | Apr 2025 – Aug 2025<br>
+• Managed Salesforce CRM records for 40+ small business clients per month.<br>
+• Supported data organization, advising workflows, and reporting readiness.<br>
+• Handled CRM-driven communications, webinars, event registration, and follow-ups.
+</li>
+
+<li><b>Junior Technical Consultant – Encora Inc (DHL)</b> | Jan 2024 – Jul 2024<br>
+• Analyzed and validated datasets to identify data quality and integration issues.<br>
+• Performed data cleaning and transformation for downstream systems.<br>
+• Assisted with ITX & WTX integration workflows and troubleshooting.
+</li>
+
+<li><b>Graduate Analyst Intern – ISRO</b> | Oct 2024 – Dec 2024<br>
+• Conducted spatial and temporal analysis on geospatial and atmospheric datasets.<br>
+• Cleaned and preprocessed large datasets for mission-critical decisions.<br>
+• Performed trend and time-series analysis for launch-window prediction.<br>
+• Built visualizations and reports for launch and engineering teams.
+</li>
+</ul>
 </div>
 
 <!-- PROJECTS -->
 <div class="card">
-  <h2>Projects</h2>
-  <ul>
-    <li><b>Hospital Operational Efficiency Analysis</b> – Python, ML</li>
-    <li><b>Healthcare Insights – Build Fellowship</b></li>
-    <li><b>U.S. Election Data Analysis (1976–2020)</b> – R</li>
-    <li><b>AI Document Intelligence & Chatbot</b> – NLP, GenAI</li>
-  </ul>
+<h2>Academic & Analytics Projects</h2>
+<ul>
+<li><b>Hospital Operational Efficiency & Quality of Service Analysis</b><br>
+• Evaluated patient wait times and service efficiency.<br>
+• Conducted EDA and data cleaning to identify bottlenecks.<br>
+• Applied regression and classification models for recommendations.
+</li>
+
+<li><b>Build Fellowship – Healthcare Insights Project</b><br>
+• Analyzed public healthcare datasets using Excel.<br>
+• Applied feature engineering and predictive modeling.<br>
+• Delivered actionable insights through reports and visualizations.
+</li>
+
+<li><b>U.S. Presidential Election Analysis (1976–2020)</b><br>
+• Analyzed voting trends using R and tidyverse.<br>
+• Performed aggregation, missing-value analysis, and statistics.<br>
+• Built ggplot2 visualizations to communicate insights.
+</li>
+
+<li><b>AI-Powered Document Intelligence & Chatbot</b><br>
+• Designed NLP-based document analysis solution.<br>
+• Built chatbot interface for intelligent querying.<br>
+• Integrated multiple data sources into a unified AI system.
+</li>
+</ul>
 </div>
 
 <!-- ACHIEVEMENTS -->
 <div class="card">
-  <h2>Achievements & Leadership</h2>
-  <ul>
-    <li>Mental Health Ambassador – GVSU</li>
-    <li>Board of Directors – Indian Students Association (ISA)</li>
-    <li>Selected for prestigious ISRO internship</li>
-    <li>Red Cross Volunteer</li>
-    <li>Worked with TCS & Barclays on CSR initiatives</li>
-  </ul>
+<h2>Achievements & Leadership</h2>
+<ul>
+<li>Mental Health Ambassador – Grand Valley State University</li>
+<li>Board of Directors Member – Indian Students Association (ISA), GVSU</li>
+<li>Selected for prestigious Indian Space Research Organisation (ISRO)</li>
+<li>Red Cross Volunteer</li>
+<li>Worked with TCS & Barclays on CSR operations and certification programs</li>
+</ul>
 </div>
 
 <!-- CERTIFICATIONS -->
 <div class="card">
-  <h2>Certifications & Learning</h2>
-  <ul>
-    <li>Master Diploma in Computer Applications</li>
-    <li>Salesforce Administrator – Beginner (30-day plan)</li>
-    <li>Microsoft Azure Fundamentals (AZ-900 – In Progress)</li>
-  </ul>
+<h2>Certifications & Learning</h2>
+<ul>
+<li>Master Diploma in Computer Applications</li>
+<li>Salesforce Administrator – Beginner (30-Day Learning Plan)</li>
+<li>Microsoft Azure Fundamentals (AZ-900 – In Progress)</li>
+</ul>
 </div>
 
 <!-- LANGUAGES -->
 <div class="card">
-  <h2>Languages</h2>
-  <ul>
-    <li>English</li>
-    <li>Tamil</li>
-    <li>Telugu</li>
-    <li>Hindi</li>
-  </ul>
+<h2>Languages</h2>
+<ul>
+<li>English</li>
+<li>Tamil</li>
+<li>Telugu</li>
+<li>Hindi</li>
+</ul>
 </div>
 
 <div class="footer">
-  © 2026 • Sujish Kumar Indrajith | Data & Analytics Portfolio
+© 2026 • Sujish Kumar Indrajith | Data & Analytics Portfolio
 </div>
 
 </div>
