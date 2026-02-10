@@ -1,272 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sujish Kumar Indrajith | Analytics Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Sujish Kumar Indrajith | Analytics Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    /* ===== GLOBAL ===== */
-    body {
-      font-family: "Poppins", "Segoe UI", sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: #1f2937;
-    }
+<style>
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #1f2937;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
 
-    /* ===== PROFILE HEADER ===== */
-    .header {
-      text-align: center;
-      color: white;
-      margin-bottom: 50px;
-    }
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
 
-    .header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 5px solid white;
-      object-fit: cover;
-      margin-bottom: 20px;
-      background: #fff;
-    }
+.header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  margin-bottom: 18px;
+  background: white;
+}
 
-    .header h1 {
-      font-size: 42px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-    }
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
 
-    .header .tagline {
-      font-size: 18px;
-      opacity: 0.95;
-    }
+.header .tagline {
+  font-size: 18px;
+  opacity: 0.95;
+}
 
-    /* ===== SECTION CARDS ===== */
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 30px 35px;
-      margin-bottom: 35px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+/* ===== CARD SECTIONS ===== */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 40px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
-    }
+.card:hover {
+  transform: translateY(-6px);
+}
 
-    /* ===== HEADINGS ===== */
-    h2 {
-      font-size: 26px;
-      margin-bottom: 18px;
-      background: linear-gradient(90deg, #667eea, #764ba2);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 700;
-    }
+/* ===== HEADINGS ===== */
+h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
 
-    p {
-      font-size: 16px;
-      line-height: 1.8;
-    }
+/* ===== TEXT ===== */
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+ul {
+  padding-left: 20px;
+}
 
-    li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
+li {
+  margin-bottom: 10px;
+}
 
-    /* ===== HIGHLIGHT BOX ===== */
-    .highlight {
-      background: linear-gradient(135deg, #eef2ff, #f5f3ff);
-      border-left: 6px solid #667eea;
-      padding: 16px 18px;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
+/* ===== HIGHLIGHT BOX ===== */
+.highlight {
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+  border-left: 6px solid #667eea;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
 
-    /* ===== SKILLS GRID ===== */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-    }
+/* ===== LINKS ===== */
+a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-    .skill-box {
-      background: #f9fafb;
-      border-radius: 12px;
-      padding: 16px;
-      border: 1px solid #e5e7eb;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    .skill-box b {
-      color: #4f46e5;
-    }
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+  margin-top: 30px;
+  font-size: 14px;
+}
 
-    /* ===== LINKS ===== */
-    a {
-      color: #4f46e5;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      text-align: center;
-      color: white;
-      margin-top: 40px;
-      opacity: 0.9;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 32px;
-      }
-    }
-  </style>
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 32px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <img src="profile.jpg" alt="Sujish Kumar Indrajith">
-    <h1>Sujish Kumar Indrajith</h1>
-    <div class="tagline">
-      Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow
-    </div>
+<!-- HEADER -->
+<div class="header">
+  <img src="profile.jpg" alt="Sujish Kumar Indrajith">
+  <h1>Sujish Kumar Indrajith</h1>
+  <div class="tagline">
+    Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow
   </div>
-
-  <!-- OBJECTIVE -->
-  <div class="card">
-    <h2>Career Objective</h2>
-    <p>
-      Analytics-focused graduate student seeking opportunities in
-      <b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b>,
-      where I can apply data analysis, statistical modeling, and visualization
-      to deliver <b>clear insights and measurable business impact</b>.
-    </p>
-    <p>
-      I am passionate about transforming complex data into actionable decisions
-      while growing expertise in <b>ServiceNow platforms</b> and
-      <b>Generative AI–enabled analytics</b>.
-    </p>
-
-    <div class="highlight">
-      🌱 Currently learning <b>ServiceNow (ITSM & workflows)</b> and
-      <b>Generative AI</b> for AI-powered analytics and intelligent automation.
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <div class="card">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li>
-        <b>Graduate Analyst Intern — ISRO</b><br>
-        Performed geospatial and time-series analysis on atmospheric datasets to
-        support rocket launch readiness and mission-critical decisions.
-      </li>
-      <li>
-        <b>Junior Technical Consultant — Encora (DHL)</b><br>
-        Analyzed, cleaned, and validated enterprise datasets to support reliable
-        data integration and analytics workflows.
-      </li>
-      <li>
-        <b>Student Office Intern — Michigan SBDC</b><br>
-        Managed Salesforce CRM data and supported data-driven reporting for
-        small business consulting programs.
-      </li>
-    </ul>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="card">
-    <h2>Key Analytics Projects</h2>
-    <ul>
-      <li>
-        <b>Hospital Operational Efficiency & Quality Analysis</b><br>
-        Applied EDA, feature engineering, and predictive modeling to identify
-        operational bottlenecks in healthcare workflows.
-      </li>
-      <li>
-        <b>Geospatial Weather Analytics for Launch Readiness</b><br>
-        Analyzed spatial and temporal weather data to assess launch-window suitability.
-      </li>
-      <li>
-        <b>U.S. Presidential Election Data Analysis</b><br>
-        Used R and tidyverse to analyze voting patterns and visualize trends.
-      </li>
-      <li>
-        <b>AI-Powered Document Intelligence & Chatbot</b><br>
-        Built an NLP-based system to extract insights from unstructured documents.
-      </li>
-    </ul>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="card">
-    <h2>Skills & Technologies</h2>
-    <div class="skills-grid">
-      <div class="skill-box"><b>Analytics:</b><br>EDA, Data Cleaning, Feature Engineering</div>
-      <div class="skill-box"><b>ML & Stats:</b><br>Regression, Classification, Hypothesis Testing</div>
-      <div class="skill-box"><b>Languages:</b><br>Python, R, SQL</div>
-      <div class="skill-box"><b>Visualization:</b><br>Tableau, Power BI, ggplot2, Matplotlib</div>
-      <div class="skill-box"><b>Platforms:</b><br>ServiceNow (Learning), Salesforce</div>
-      <div class="skill-box"><b>Tools:</b><br>GitHub, Jupyter, VS Code</div>
-    </div>
-  </div>
-
-  <!-- ACHIEVEMENTS -->
-  <div class="card">
-    <h2>Achievements</h2>
-    <ul>
-      <li>🎓 MS in Applied Computer Science — GPA: 3.75/4.0</li>
-      <li>🛰️ Selected as Graduate Analyst Intern at ISRO</li>
-      <li>📊 Analytics experience across healthcare, government, and business domains</li>
-      <li>🤖 Actively building expertise in ServiceNow and Generative AI</li>
-    </ul>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="card">
-    <h2>Contact</h2>
-    <p>
-      📧 <b>Email:</b> sujishofficial@gmail.com<br>
-      🔗 <b>LinkedIn:</b>
-      <a href="https://www.linkedin.com/in/sujish-kumar-indrajith-9a9737238" target="_blank">
-        linkedin.com/in/sujish-kumar-indrajith
-      </a><br>
-      📁 <b>GitHub:</b>
-      <a href="https://github.com/NAMEISSUJISH" target="_blank">
-        github.com/NAMEISSUJISH
-      </a>
-    </p>
-  </div>
-
-  <div class="footer">
-     © 2026 • Sujish Kumar Indrajith | Data & Analytics 
-  </div>
-
 </div>
 
+<!-- OBJECTIVE -->
+<div class="card">
+  <h2>Career Objective</h2>
+  <p>
+    Analytics-focused professional and graduate student in <b>Applied Computer Science</b>
+    seeking opportunities in <b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b>.
+    I specialize in transforming complex datasets into
+    <b>clear, actionable insights</b> that support business and operational decision-making.
+  </p>
+  <div class="highlight">
+    🌱 Currently expanding my expertise in <b>ServiceNow</b> and <b>Generative AI</b>,
+    focusing on AI-enabled analytics, workflow automation, and intelligent decision-support systems.
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="card">
+  <h2>Education</h2>
+  <ul>
+    <li><b>MS – Applied Computer Science</b>, Grand Valley State University, USA<br>
+        GPA: 3.75 / 4.0 | May 2026</li>
+    <li><b>BE – Electronics & Computer Science</b>, Anna University, India<br>
+        GPA: 3.45 / 4.0 | May 2023</li>
+  </ul>
+  <p>
+    <b>Relevant Coursework:</b> Data Mining, Machine Learning, Data Engineering,
+    Information Visualization, Probability & Statistics, Linear Algebra,
+    Python, R, Applied Statistics, Business Intelligence
+  </p>
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+  <h2>Skills</h2>
+  <ul>
+    <li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML</li>
+    <li><b>AI & Data Analytics:</b> EDA, Data Cleaning, Regression, Classification</li>
+    <li><b>Insight Analysis:</b> Document Understanding, Insight Extraction</li>
+    <li><b>Visualization:</b> Tableau, Power BI, ggplot2, Matplotlib</li>
+    <li><b>Tools:</b> Jupyter Notebook, GitHub, VS Code, Salesforce, Unity</li>
+  </ul>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="card">
+  <h2>Professional Experience</h2>
+  <ul>
+    <li><b>STING Member – AR/VR Developer (GVSU)</b><br>
+        Developed immersive Unity-based forensic simulations and analyzed user interaction data.</li>
+    <li><b>Student Office Intern – Michigan SBDC</b><br>
+        Managed Salesforce CRM data for 40+ small business clients.</li>
+    <li><b>Junior Technical Consultant – Encora (DHL)</b><br>
+        Performed data cleaning, validation, and integration support.</li>
+    <li><b>Graduate Analyst Intern – ISRO</b><br>
+        Conducted geospatial and time-series analysis for launch readiness.</li>
+  </ul>
+</div>
+
+<!-- PROJECTS -->
+<div class="card">
+  <h2>Projects</h2>
+  <ul>
+    <li><b>Hospital Operational Efficiency Analysis</b> – Python, ML</li>
+    <li><b>Healthcare Insights – Build Fellowship</b></li>
+    <li><b>U.S. Election Data Analysis (1976–2020)</b> – R</li>
+    <li><b>AI Document Intelligence & Chatbot</b> – NLP, GenAI</li>
+  </ul>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div class="card">
+  <h2>Achievements & Leadership</h2>
+  <ul>
+    <li>Mental Health Ambassador – GVSU</li>
+    <li>Board of Directors – Indian Students Association (ISA)</li>
+    <li>Selected for prestigious ISRO internship</li>
+    <li>Red Cross Volunteer</li>
+    <li>Worked with TCS & Barclays on CSR initiatives</li>
+  </ul>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="card">
+  <h2>Certifications & Learning</h2>
+  <ul>
+    <li>Master Diploma in Computer Applications</li>
+    <li>Salesforce Administrator – Beginner (30-day plan)</li>
+    <li>Microsoft Azure Fundamentals (AZ-900 – In Progress)</li>
+  </ul>
+</div>
+
+<!-- LANGUAGES -->
+<div class="card">
+  <h2>Languages</h2>
+  <ul>
+    <li>English</li>
+    <li>Tamil</li>
+    <li>Telugu</li>
+    <li>Hindi</li>
+  </ul>
+</div>
+
+<div class="footer">
+  © 2026 • Sujish Kumar Indrajith | Data & Analytics Portfolio
+</div>
+
+</div>
 </body>
 </html>
