@@ -6,239 +6,283 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+:root{
+  --primary:#4f46e5;
+  --secondary:#9333ea;
+  --dark:#0f172a;
+  --muted:#475569;
+  --bg:#f8fafc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
 body{
   margin:0;
-  font-family:"Poppins","Segoe UI",Arial,sans-serif;
-  background:linear-gradient(135deg,#667eea,#764ba2);
-  color:#1f2937;
+  font-family:"Inter","Segoe UI",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.8;
 }
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:50px 20px;
-}
-.header{
-  text-align:center;
-  color:white;
-  margin-bottom:50px;
-}
-.header img{
-  width:170px;
-  height:170px;
-  border-radius:50%;
-  border:6px solid white;
-  object-fit:cover;
-  margin-bottom:20px;
-}
-.header h1{
-  font-size:44px;
-  margin-bottom:6px;
-}
-.header .tagline{
-  font-size:18px;
-  opacity:0.95;
-}
-.card{
+nav{
+  position:sticky;
+  top:0;
   background:white;
-  border-radius:20px;
-  padding:40px;
-  margin-bottom:40px;
-  box-shadow:0 30px 60px rgba(0,0,0,0.18);
+  border-bottom:1px solid #e5e7eb;
+  z-index:10;
 }
-h2{
-  font-size:28px;
-  margin-bottom:20px;
-  background:linear-gradient(90deg,#667eea,#764ba2);
+nav ul{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  padding:14px;
+  margin:0;
+  list-style:none;
+}
+nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:600;
+}
+nav a:hover{color:var(--primary)}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+  align-items:center;
+}
+.hero img{
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid var(--primary);
+}
+.hero h1{
+  font-size:44px;
+  margin-bottom:8px;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-p{
-  font-size:16px;
-  line-height:1.85;
+.hero .tagline{
+  font-size:18px;
+  color:var(--muted);
 }
-ul{
-  padding-left:22px;
+
+section{margin-top:80px}
+section h2{
+  font-size:30px;
+  margin-bottom:22px;
+  position:relative;
 }
-li{
-  margin-bottom:12px;
+section h2::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:70px;
+  height:4px;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  border-radius:2px;
 }
-.highlight{
-  background:linear-gradient(135deg,#eef2ff,#f5f3ff);
-  border-left:6px solid #667eea;
-  padding:18px;
-  border-radius:14px;
-  margin-top:20px;
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:36px;
+  margin-bottom:30px;
+  box-shadow:0 20px 45px rgba(0,0,0,0.08);
 }
+
+ul{padding-left:22px}
+li{margin-bottom:10px}
+
 .footer{
   text-align:center;
-  color:white;
+  padding:40px 20px;
+  color:var(--muted);
   font-size:14px;
-  margin-top:20px;
-  opacity:0.9;
 }
-@media(max-width:600px){
-  .header h1{font-size:32px;}
+
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .hero img{margin:auto}
 }
 </style>
 </head>
 
 <body>
+
+<nav>
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#leadership">Leadership</a></li>
+</ul>
+</nav>
+
 <div class="container">
 
-<!-- HEADER -->
-<div class="header">
+<!-- HERO -->
+<div class="hero">
   <img src="profile.jpg" alt="Sujish Kumar Indrajith">
-  <h1>Sujish Kumar Indrajith</h1>
-  <div class="tagline">
-    Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow
+  <div>
+    <h1>Sujish Kumar Indrajith</h1>
+    <div class="tagline">
+      Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow
+    </div>
   </div>
 </div>
 
-<!-- OBJECTIVE -->
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
 <div class="card">
-<h2>Career Objective</h2>
 <p>
-Analytics-focused professional and graduate student in <b>Applied Computer Science</b> with hands-on experience in
-<b>data analysis, statistical modeling, and visualization</b>. Seeking opportunities in
-<b>Data Analyst, Business Analyst, Product Analyst, and Analytics roles</b> where I can transform
-complex datasets into <b>clear, actionable insights</b> that drive business and operational decisions.
+I am an analytics-focused professional and graduate student in <b>Applied Computer Science</b> with
+hands-on experience in <b>data analysis, statistical modeling, machine learning, and visualization</b>.
+I specialize in transforming complex, real-world datasets into <b>clear, actionable insights</b>
+that support data-driven decision-making.
 </p>
-<div class="highlight">
-🌱 Currently expanding expertise in <b>ServiceNow</b> and <b>Generative AI</b>, focusing on
+<p>
+My background spans <b>healthcare analytics, geospatial analysis, CRM operations, enterprise consulting,
+and academic research</b>. I am comfortable working with noisy, incomplete data and communicating insights
+to both technical and non-technical stakeholders.
+</p>
+<p>
+I am currently expanding my expertise in <b>ServiceNow</b> and <b>Generative AI</b>, focusing on
 AI-enabled analytics, workflow automation, and intelligent decision-support systems.
+</p>
 </div>
-</div>
-
-<!-- EDUCATION -->
-<div class="card">
-<h2>Education</h2>
-<ul>
-<li><b>Master of Science – Applied Computer Science</b><br>
-Grand Valley State University, Grand Rapids, MI<br>
-GPA: 3.75 / 4.0 | May 2026</li>
-
-<li><b>Bachelor of Engineering – Electronics & Computer Science</b><br>
-Anna University, Chennai, India<br>
-GPA: 3.45 / 4.0 | May 2023</li>
-</ul>
-<p><b>Relevant Coursework:</b> Data Mining, Machine Learning, Data Engineering, Information Visualization,
-Probability & Statistics, Linear Algebra, Python Programming, R Programming,
-System Analysis & Design, Applied Statistics, Business Intelligence</p>
-</div>
+</section>
 
 <!-- SKILLS -->
-<div class="card">
+<section id="skills">
 <h2>Skills</h2>
+<div class="card">
 <ul>
 <li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML</li>
-<li><b>AI & Data Analytics:</b> Exploratory Data Analysis (EDA), Data Cleaning & Preprocessing,
-Regression & Classification Models</li>
-<li><b>Insight Analysis:</b> Document Understanding, Insight Extraction, Data Summarization</li>
-<li><b>Visualization:</b> ggplot2, Matplotlib, Tableau, Power BI, Analytical Reporting</li>
-<li><b>Tools & Platforms:</b> Jupyter Notebook, GitHub, Visual Studio Code, Unity, Salesforce</li>
-<li><b>Professional Skills:</b> Teamwork, Problem-Solving, Collaboration, Customer-Focused Thinking</li>
+<li><b>Analytics & ML:</b> EDA, Data Cleaning, Feature Engineering, Regression, Classification, Time-Series</li>
+<li><b>Visualization:</b> Tableau, Power BI, ggplot2, Matplotlib</li>
+<li><b>Tools & Platforms:</b> GitHub, Jupyter, VS Code, Salesforce, Unity</li>
+<li><b>Professional Skills:</b> Stakeholder Communication, Problem-Solving, Collaboration</li>
 </ul>
 </div>
+</section>
 
 <!-- EXPERIENCE -->
-<div class="card">
+<section id="experience">
 <h2>Professional Experience</h2>
-<ul>
-<li><b>STING Member – AR/VR Developer (GVSU)</b> | Sep 2025 – Present<br>
-• Developed immersive AR/VR crime scene simulations using Unity for forensic education.<br>
-• Designed and optimized 3D environments using Blender for performance and spatial accuracy.<br>
-• Implemented interactive logic and workflows using JetBrains tools.<br>
-• Analyzed user interaction and system performance data to improve learning outcomes.
-</li>
 
-<li><b>Student Office Intern – Michigan SBDC</b> | Apr 2025 – Aug 2025<br>
-• Managed Salesforce CRM records for 40+ small business clients per month.<br>
-• Supported data organization, advising workflows, and reporting readiness.<br>
-• Handled CRM-driven communications, webinars, event registration, and follow-ups.
-</li>
-
-<li><b>Junior Technical Consultant – Encora Inc (DHL)</b> | Jan 2024 – Jul 2024<br>
-• Analyzed and validated datasets to identify data quality and integration issues.<br>
-• Performed data cleaning and transformation for downstream systems.<br>
-• Assisted with ITX & WTX integration workflows and troubleshooting.
-</li>
-
-<li><b>Graduate Analyst Intern – ISRO</b> | Oct 2024 – Dec 2024<br>
-• Conducted spatial and temporal analysis on geospatial and atmospheric datasets.<br>
-• Cleaned and preprocessed large datasets for mission-critical decisions.<br>
-• Performed trend and time-series analysis for launch-window prediction.<br>
-• Built visualizations and reports for launch and engineering teams.
-</li>
-</ul>
+<div class="card">
+<b>Graduate Analyst Intern – Indian Space Research Organisation (ISRO)</b><br>
+<p>
+Worked on <b>geospatial and atmospheric data analytics</b> to support rocket launch readiness.
+Cleaned, validated, and preprocessed large spatial datasets and performed
+<b>temporal trend and time-series analysis</b> to assess weather conditions.
+Developed analytical visualizations and reports used by engineering teams
+to evaluate launch-window suitability and environmental risks.
+</p>
 </div>
+
+<div class="card">
+<b>Junior Technical Consultant – Encora Inc (Client: DHL)</b><br>
+<p>
+Supported enterprise data integration projects by analyzing, validating,
+and transforming datasets. Identified data quality issues, supported
+ITX/WTX integration workflows, and collaborated with senior consultants
+to ensure reliable end-to-end system integrations.
+</p>
+</div>
+
+<div class="card">
+<b>Student Office Intern – Michigan Small Business Development Center</b><br>
+<p>
+Managed Salesforce CRM data for 40+ small business clients per month.
+Supported data organization, reporting readiness, and CRM-driven
+communications for consulting programs, events, and outreach initiatives.
+</p>
+</div>
+
+</section>
 
 <!-- PROJECTS -->
-<div class="card">
+<section id="projects">
 <h2>Academic & Analytics Projects</h2>
-<ul>
-<li><b>Hospital Operational Efficiency & Quality of Service Analysis</b><br>
-• Evaluated patient wait times and service efficiency.<br>
-• Conducted EDA and data cleaning to identify bottlenecks.<br>
-• Applied regression and classification models for recommendations.
-</li>
 
-<li><b>Build Fellowship – Healthcare Insights Project</b><br>
-• Analyzed public healthcare datasets using Excel.<br>
-• Applied feature engineering and predictive modeling.<br>
-• Delivered actionable insights through reports and visualizations.
-</li>
-
-<li><b>U.S. Presidential Election Analysis (1976–2020)</b><br>
-• Analyzed voting trends using R and tidyverse.<br>
-• Performed aggregation, missing-value analysis, and statistics.<br>
-• Built ggplot2 visualizations to communicate insights.
-</li>
-
-<li><b>AI-Powered Document Intelligence & Chatbot</b><br>
-• Designed NLP-based document analysis solution.<br>
-• Built chatbot interface for intelligent querying.<br>
-• Integrated multiple data sources into a unified AI system.
-</li>
-</ul>
+<div class="card">
+<b>Hospital Operational Efficiency & Quality of Service Analysis</b>
+<p>
+Analyzed hospital and emergency department operational datasets to evaluate
+patient wait times, service efficiency, and quality-of-care indicators.
+Performed extensive data cleaning and EDA to identify workflow delays and
+capacity bottlenecks. Applied regression and classification models to
+identify key operational drivers and provided data-backed recommendations
+for improving patient experience and throughput.
+</p>
 </div>
 
-<!-- ACHIEVEMENTS -->
 <div class="card">
-<h2>Achievements & Leadership</h2>
+<b>Build Fellowship – Unraveling Healthcare Insights</b>
+<p>
+Explored public healthcare datasets using Excel and analytical techniques
+to identify population-level health trends. Applied feature engineering
+and predictive modeling to evaluate factors influencing healthcare outcomes.
+Translated analytical results into structured reports and visualizations
+for non-technical audiences.
+</p>
+</div>
+
+<div class="card">
+<b>Statistical Analysis of U.S. Presidential Election Data (1976–2020)</b>
+<p>
+Used R and the tidyverse ecosystem to analyze voting patterns across states,
+parties, and election years. Conducted data exploration, summary statistics,
+missing-value analysis, and group-level aggregations. Created ggplot2
+visualizations to clearly communicate trends and political shifts over time.
+</p>
+</div>
+
+<div class="card">
+<b>AI-Powered Document Intelligence & Chatbot System</b>
+<p>
+Designed an NLP-based system to analyze unstructured documents and extract
+key insights. Built a chatbot-style interface that allows users to query
+documents and receive context-aware responses. Integrated multiple data
+sources into a unified AI-powered query system, demonstrating end-to-end
+solution design.
+</p>
+</div>
+
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+<h2>Leadership & Achievements</h2>
+<div class="card">
 <ul>
 <li>Mental Health Ambassador – Grand Valley State University</li>
 <li>Board of Directors Member – Indian Students Association (ISA), GVSU</li>
 <li>Selected for prestigious Indian Space Research Organisation (ISRO)</li>
 <li>Red Cross Volunteer</li>
-<li>Worked with TCS & Barclays on CSR operations and certification programs</li>
+<li>Worked with TCS & Barclays on CSR and certification initiatives</li>
 </ul>
 </div>
+</section>
 
-<!-- CERTIFICATIONS -->
-<div class="card">
-<h2>Certifications & Learning</h2>
-<ul>
-<li>Master Diploma in Computer Applications</li>
-<li>Salesforce Administrator – Beginner (30-Day Learning Plan)</li>
-<li>Microsoft Azure Fundamentals (AZ-900 – In Progress)</li>
-</ul>
-</div>
-
-<!-- LANGUAGES -->
-<div class="card">
-<h2>Languages</h2>
-<ul>
-<li>English</li>
-<li>Tamil</li>
-<li>Telugu</li>
-<li>Hindi</li>
-</ul>
 </div>
 
 <div class="footer">
-© 2026 • Sujish Kumar Indrajith | Data & Analytics Portfolio
+© 2026 • Sujish Kumar Indrajith • Data & Analytics Portfolio
 </div>
 
-</div>
 </body>
 </html>
