@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sujish Kumar Indrajith | Analytics Portfolio</title>
+<title>Sujish Kumar Indrajith | Software Engineer & AI/ML Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ICONS -->
@@ -10,11 +10,11 @@
 
 <style>
 :root{
-  --primary:#4f46e5;
-  --secondary:#9333ea;
-  --dark:#0f172a;
-  --muted:#475569;
-  --bg:#f8fafc;
+  --primary:#0f766e;
+  --secondary:#0369a1;
+  --dark:#1e293b;
+  --muted:#64748b;
+  --bg:#f4f6f8;
   --card:#ffffff;
 }
 *{box-sizing:border-box}
@@ -31,7 +31,7 @@ nav{
   position:sticky;
   top:0;
   background:white;
-  border-bottom:1px solid #e5e7eb;
+  border-bottom:1px solid #e2e8f0;
   z-index:10;
 }
 nav ul{
@@ -41,6 +41,7 @@ nav ul{
   padding:14px;
   margin:0;
   list-style:none;
+  flex-wrap:wrap;
 }
 nav a{
   text-decoration:none;
@@ -80,6 +81,19 @@ nav a:hover{color:var(--primary)}
   font-size:18px;
   color:var(--muted);
 }
+.hero .contact-line{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--muted);
+}
+.hero .contact-line i{
+  margin-right:5px;
+  color:var(--primary);
+}
+.hero .contact-line span{
+  margin-right:18px;
+  display:inline-block;
+}
 
 /* SOCIAL ICONS */
 .social-links{
@@ -103,7 +117,7 @@ nav a:hover{color:var(--primary)}
   background:linear-gradient(135deg,var(--primary),var(--secondary));
   color:white;
   transform:translateY(-3px);
-  box-shadow:0 8px 22px rgba(79,70,229,.35);
+  box-shadow:0 8px 22px rgba(15,118,110,.3);
 }
 
 /* SECTIONS */
@@ -130,10 +144,63 @@ section h2::after{
   border-radius:18px;
   padding:36px;
   margin-bottom:30px;
-  box-shadow:0 20px 45px rgba(0,0,0,.08);
+  border:1px solid #e2e8f0;
+  box-shadow:0 15px 35px rgba(15,23,42,.06);
 }
 ul{padding-left:22px}
 li{margin-bottom:10px}
+
+/* SKILLS GRID */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.skill-block h3{
+  font-size:16px;
+  margin:0 0 8px 0;
+  color:var(--primary);
+}
+.skill-block p{
+  margin:0;
+  color:var(--muted);
+  font-size:14.5px;
+  line-height:1.6;
+}
+@media(max-width:768px){
+  .skills-grid{grid-template-columns:1fr}
+}
+
+/* EXPERIENCE HEADER */
+.exp-header{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-bottom:12px;
+}
+.exp-header .role{font-size:17px}
+.exp-header .dates{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:600;
+}
+.exp-header .loc{
+  color:var(--muted);
+  font-size:14px;
+  display:block;
+  margin-top:2px;
+}
+
+/* EDUCATION / CERT GRID */
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+@media(max-width:768px){
+  .two-col{grid-template-columns:1fr}
+}
 
 /* RESUME BUTTON */
 .resume-btn{
@@ -150,7 +217,7 @@ li{margin-bottom:10px}
 }
 .resume-btn:hover{
   transform:translateY(-3px);
-  box-shadow:0 12px 28px rgba(79,70,229,.45);
+  box-shadow:0 12px 28px rgba(15,118,110,.4);
 }
 
 /* FOOTER */
@@ -178,6 +245,7 @@ li{margin-bottom:10px}
   <li><a href="#skills">Skills</a></li>
   <li><a href="#experience">Experience</a></li>
   <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li>
   <li><a href="#leadership">Leadership</a></li>
   <li><a href="#resume">Resume</a></li>
 </ul>
@@ -190,11 +258,17 @@ li{margin-bottom:10px}
   <img src="profile.jpg" alt="Sujish Kumar Indrajith">
   <div>
     <h1>Sujish Kumar Indrajith</h1>
-    <div class="tagline">Data Analyst • Business Analyst • Analytics • GenAI • ServiceNow</div>
+    <div class="tagline">Software Engineer • AI/ML Engineer • LLM Applications • Full-Stack Development</div>
+
+    <div class="contact-line">
+      <span><i class="fas fa-location-dot"></i>Grand Rapids, MI</span>
+      <span><i class="fas fa-phone"></i>(616) 349-9593</span>
+      <span><i class="fas fa-envelope"></i>sujishkumar03092001@gmail.com</span>
+    </div>
 
     <div class="social-links">
       <a href="https://www.linkedin.com/in/sujish-kumar-indrajith-9a9737238/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:sujishofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:sujishkumar03092001@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://discord.gg/Wu6SfATF" target="_blank"><i class="fab fa-discord"></i></a>
       <a href="https://github.com/NAMEISSUJISH" target="_blank"><i class="fab fa-github"></i></a>
     </div>
@@ -206,17 +280,22 @@ li{margin-bottom:10px}
 <h2>About Me</h2>
 <div class="card">
 <p>
-Analytics-focused graduate student in <b>Applied Computer Science</b> with strong experience in
-data analysis, statistical modeling, machine learning, and visualization.
-I specialize in converting complex datasets into <b>clear, actionable insights</b>
-for business and operational decision-making.
+I'm a software engineer who got into AI the practical way — by building things that had to actually work for
+real users, not just demo well. Over the past couple of years that's meant writing Java and Spring Boot services,
+wiring up React front ends, and increasingly, figuring out how to make large language models genuinely useful
+inside production software rather than bolted on as a gimmick.
 </p>
 <p>
-Experience spans healthcare analytics, geospatial analysis, CRM operations,
-enterprise consulting, AR/VR research, and academic projects.
+What I enjoy most is the middle layer: taking something an LLM can technically do and turning it into a feature
+that saves someone time, cuts down on manual work, or makes a confusing system easier to navigate. That's shown
+up in a university AI directory, a financial research copilot, and a healthcare model that helps hospitals plan
+around patient length of stay.
 </p>
 <p>
-Currently expanding skills in <b>ServiceNow</b> and <b>Generative AI</b>.
+Outside of pure engineering, I've spent time in data-heavy roles — logistics analytics at DHL, environmental
+research at ISRO — which gave me an appreciation for how much of "AI work" is really just understanding the data
+and the people who'll use the output. I'm based in Grand Rapids, Michigan, currently building on GVSU's AI/ML
+team, and always looking for the next problem worth automating.
 </p>
 </div>
 </section>
@@ -225,12 +304,49 @@ Currently expanding skills in <b>ServiceNow</b> and <b>Generative AI</b>.
 <section id="skills">
 <h2>Skills</h2>
 <div class="card">
-<ul>
-<li><b>Programming:</b> Python, R, SQL, JavaScript, C, HTML, CSS</li>
-<li><b>Analytics & ML:</b> EDA, Data Cleaning, Feature Engineering, Regression, Classification, Time-Series</li>
-<li><b>Visualization:</b> Tableau, Power BI, ggplot2, Matplotlib</li>
-<li><b>Tools:</b> GitHub, Jupyter, VS Code, Salesforce, Unity</li>
-</ul>
+<div class="skills-grid">
+
+<div class="skill-block">
+<h3>AI Engineering & Agentic AI</h3>
+<p>Generative AI, LLMs, Google Gemini, Prompt Engineering, RAG, LangChain, AI Agents, NLP, Conversational AI, Intelligent Automation, LLM Application Development, Vector Search</p>
+</div>
+
+<div class="skill-block">
+<h3>AI/ML & Data</h3>
+<p>Machine Learning, Deep Learning, Predictive Modeling, XGBoost, Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Feature Engineering, Statistical Analysis, EDA, Data Analytics, SQL</p>
+</div>
+
+<div class="skill-block">
+<h3>Healthcare & Applied AI</h3>
+<p>Healthcare Data Analytics, Clinical Data Analysis, Predictive Analytics, Operational Analytics, Data-Driven Decision Making, Workflow Optimization, AI-Assisted Decision Support</p>
+</div>
+
+<div class="skill-block">
+<h3>Full-Stack & Backend Engineering</h3>
+<p>Java, Spring Boot 3, Python, React 19, TypeScript, JavaScript, REST APIs, Microservices, JPA/Hibernate, OOP, Backend Development, API Integration</p>
+</div>
+
+<div class="skill-block">
+<h3>Automation & Systems Integration</h3>
+<p>Workflow Automation, Process Automation, Spring Scheduling, Gmail API, OAuth 2.0, Event-Driven Workflows, Intelligent Application Workflows</p>
+</div>
+
+<div class="skill-block">
+<h3>Cloud & DevOps</h3>
+<p>Docker, Docker Multi-Stage Builds, CI/CD, GitHub Actions, Git, GitHub, Railway, Vercel, Firebase, Google AI Studio, AWS, Azure</p>
+</div>
+
+<div class="skill-block">
+<h3>Databases & Infrastructure</h3>
+<p>MySQL, PostgreSQL, SQL Server, MongoDB, ChromaDB, Relational Database Design, Query Optimization, Vector Databases, Data Pipelines</p>
+</div>
+
+<div class="skill-block">
+<h3>Engineering Practices</h3>
+<p>JUnit, Mockito, Test-Driven Development, Object-Oriented Design, Agile/Scrum, SDLC, Code Review, Debugging</p>
+</div>
+
+</div>
 </div>
 </section>
 
@@ -239,67 +355,175 @@ Currently expanding skills in <b>ServiceNow</b> and <b>Generative AI</b>.
 <h2>Professional Experience</h2>
 
 <div class="card">
-<b>STING Member – AR/VR Developer (GVSU)</b>
+<div class="exp-header">
+  <span class="role"><b>AI/ML Engineer – Grand Valley State University (STING)</b></span>
+  <span class="dates">Aug 2025 – Present</span>
+</div>
+<span class="loc">Grand Rapids, Michigan</span>
 <p>
-Developed immersive AR/VR crime-scene simulations using Unity in collaboration
-with the GVSU Criminology Department. Optimized 3D environments in Blender and
-analyzed user-interaction data to improve virtual forensic learning outcomes.
+I'm an AI/ML Engineer on GVSU's STING team, and here I actually get to build the kind of AI applications I care
+about most — ones people use every day, not just demos. I built an AI-powered discovery platform using Python,
+React, TypeScript, and Firebase that helps students, faculty, and staff find and use the university's growing
+catalog of AI tools, with LLMs doing the heavy lifting on search and categorization. I spent a lot of time
+tuning prompt design and retrieval quality, and that work cut the time it takes people to find the right tool
+by around 40%. I also automated the manual side of content management — tagging, deduplication, review
+workflows — which brought processing latency down by roughly 30%. Day to day, a big part of my job is turning
+vague "it would be nice if..." requests from staff and faculty into features that are actually reliable, which
+means a lot of testing, prompt evaluation, and iteration, all inside an Agile team with regular code review and
+design discussion.
 </p>
 </div>
 
 <div class="card">
-<b>Graduate Analyst Intern – Indian Space Research Organisation (ISRO)</b>
+<div class="exp-header">
+  <span class="role"><b>Junior Technical Consultant – Encora Inc (Client: DHL)</b></span>
+  <span class="dates">Jan 2024 – Jul 2024</span>
+</div>
+<span class="loc">Chennai, India</span>
 <p>
-Performed geospatial and atmospheric data analysis to support rocket launch readiness.
-Conducted temporal trend and time-series analysis, built analytical visualizations,
-and delivered insights used by engineering teams.
+At Encora, working on the DHL account, I worked inside large-scale logistics and shipment data using Python and
+SQL to dig up patterns in delivery performance and pinpoint where bottlenecks were forming. I built out Power BI
+and Tableau dashboards so operations teams could see KPIs in real time instead of waiting on static reports, and
+layered predictive modeling and feature engineering on top so we could flag trends before they became real
+problems. The goal throughout was the same: better resource planning and fewer surprises in the delivery
+pipeline.
 </p>
 </div>
 
 <div class="card">
-<b>Student Office Intern – Michigan Small Business Development Center</b>
+<div class="exp-header">
+  <span class="role"><b>Graduate Analyst Intern – Indian Space Research Organisation (ISRO)</b></span>
+  <span class="dates">Oct 2023 – Dec 2023</span>
+</div>
+<span class="loc">Thiruvananthapuram (Trivandrum), India</span>
 <p>
-Managed Salesforce CRM records for 40+ small business clients per month,
-supporting consulting workflows, reporting, and outreach initiatives.
+At ISRO, I analyzed climate and environmental datasets using Python and SQL to identify trends relevant to
+ongoing research. Most of the work was in the unglamorous but essential stages — data cleaning, exploratory
+analysis, feature engineering — before any modeling was possible. From there I applied statistical analysis and
+predictive modeling to turn raw environmental data into insights the research team could actually act on.
 </p>
 </div>
 
 <div class="card">
-<b>Junior Technical Consultant – Encora Inc (Client: DHL)</b>
+<div class="exp-header">
+  <span class="role"><b>Technical Intern – Cognizant Technology Solutions</b></span>
+  <span class="dates">Jan 2023 – Jul 2023</span>
+</div>
+<span class="loc">Chennai, India</span>
 <p>
-Supported enterprise data integration projects through data validation,
-cleaning, transformation, and ITX/WTX integration support.
+This was my first real exposure to production software work. I used Python, SQL, and core data structures to
+build and analyze software solutions for technical requirements, applying data processing and algorithmic
+problem-solving to structured datasets. I spent a lot of this internship in testing and debugging, which taught
+me early on how to actually build something reliable rather than code that just happens to run once.
+</p>
+</div>
+
+<div class="card">
+<div class="exp-header">
+  <span class="role"><b>Student Office Intern – Michigan Small Business Development Center</b></span>
+  <span class="dates">2024</span>
+</div>
+<span class="loc">Grand Rapids, Michigan</span>
+<p>
+I managed Salesforce CRM records for 40+ small business clients each month, supporting the consulting team's
+workflows, reporting, and outreach initiatives.
 </p>
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2>Academic & Analytics Projects</h2>
+<h2>Projects</h2>
 
 <div class="card">
-<b>Hospital Operational Efficiency & Quality of Service Analysis</b>
+<b>Market Flux – AI-Powered Investment Research & Intelligence Platform</b>
 <p>
-Analyzed hospital operational datasets to evaluate patient wait times,
-identify bottlenecks, and apply regression & classification models to
-recommend workflow improvements.
+<b>What I set out to do:</b> I wanted to see if I could build a research assistant that didn't just answer
+questions about the market, but actually helped you act on them — pulling live data, news, and a trading
+simulator into one place instead of five open tabs.
+</p>
+<p>
+<b>What I built:</b> An async FastAPI backend that streams responses to a React front end in real time using
+Server-Sent Events, so answers show up as they're generated instead of after a long wait. Retrieval runs on
+Gemini paired with PostgreSQL/pgvector, letting the assistant reason over both structured market data and
+unstructured news context together. I connected it to yfinance, RSS feeds, and Alpaca's paper trading API so the
+flow goes from "read the news" to "simulate the trade" without switching tools, secured it with Supabase auth,
+and wrote automated tests covering the API layer, the research logic, and the trading policy engine.
+</p>
+</div>
+
+<div class="card">
+<b>LakerAI Directory – Institutional AI Discovery & Management Platform</b>
+<p>
+<b>What I set out to do:</b> GVSU had AI tools scattered across departments with no central place to find them —
+I wanted to build something that made discovering and vetting those tools as easy as a search bar.
+</p>
+<p>
+<b>What I built:</b> A centralized, searchable directory for students, faculty, and staff, gated behind Google
+auth restricted to university emails. I designed the submission-and-review pipeline on Firestore so anyone can
+propose a tool while admins review, approve, or edit it through a dedicated admin panel that also handles
+categories and general content upkeep — all in one workflow instead of scattered spreadsheets. Everything ships
+through Git-based version control so changes stay tracked and reversible.
+</p>
+</div>
+
+<div class="card">
+<b>Hospital Operational Efficiency & Length of Stay Prediction</b>
+<p>
+<b>What I set out to do:</b> I wanted to find out what actually drives patients staying in the hospital longer
+than expected — and whether that could be predicted early enough to matter operationally.
+</p>
+<p>
+<b>What I built:</b> Starting from 100K+ hospital records, I built the full pipeline myself — SQL extraction,
+feature engineering, exploratory analysis, then modeling — rather than jumping straight to the modeling step. I
+tested Linear Regression, Random Forest, and XGBoost against each other; XGBoost came out on top with a 0.80
+test R², 0.82 MAE, and 1.05 RMSE. The real payoff wasn't the model score itself, but pulling out the specific
+factors tied to longer stays so hospital teams could actually plan resources around them.
 </p>
 </div>
 
 <div class="card">
 <b>U.S. Presidential Election Analysis (1976–2020)</b>
 <p>
-Used R and tidyverse to analyze voting patterns, trends, and party shifts.
-Created ggplot2 visualizations to communicate insights clearly.
+<b>What I set out to do:</b> A side project born out of curiosity — how has party support in the U.S. actually
+shifted over four decades, region by region?
+</p>
+<p>
+<b>What I built:</b> Using R and the tidyverse, I pulled apart decades of voting data and built a set of ggplot2
+visualizations that made those long-run patterns easy to actually see rather than just read as numbers in a
+table.
 </p>
 </div>
 
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education & Certifications</h2>
+<div class="two-col">
+
 <div class="card">
-<b>AI-Powered Document Intelligence & Chatbot</b>
-<p>
-Built an NLP-based document analysis system with a chatbot interface
-to extract insights and answer context-aware queries.
-</p>
+<b>Grand Valley State University</b><br>
+Master of Science, Applied Computer Science (ACS)<br>
+Grand Rapids, MI &nbsp;|&nbsp; Aug 2024 – May 2025<br>
+GPA: 3.75 / 4.0
+<br><br>
+<b>Anna University</b><br>
+Bachelor of Engineering, Electronics and Communication Engineering (ECE)<br>
+Chennai, India &nbsp;|&nbsp; Aug 2019 – May 2023<br>
+GPA: 3.51 / 4.0
+</div>
+
+<div class="card">
+<b>Certifications & Badges</b>
+<ul>
+<li>Master in Diploma Computer Application</li>
+<li>CIS-900: SQL AI Database Architect</li>
+<li>Database Management Badge</li>
+<li>Data Analyst Badge</li>
+</ul>
+</div>
+
 </div>
 </section>
 
@@ -331,7 +555,7 @@ to extract insights and answer context-aware queries.
 </div>
 
 <div class="footer">
-© 2026 • Sujish Kumar Indrajith • Data & Analytics Portfolio
+© 2026 • Sujish Kumar Indrajith • Software Engineer & AI/ML Portfolio
 </div>
 
 </body>
